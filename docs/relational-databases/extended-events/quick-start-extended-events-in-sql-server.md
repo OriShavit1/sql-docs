@@ -102,12 +102,12 @@ The text and supporting screenshots can become slightly inexact when the SSMS UI
 
 7. Click the **Filter (Predicate)** tab. Next, click **Click here to add a clause**, for the intention of capturing all SQL SELECT statements that have a HAVING clause.
 
-8. In the **Field** drop-down list, and choose **sqlserver.sql_text**.
+8. In the **Field** drop-down list, and choose **statement**.
    - For **Operator** choose a LIKE operator.
    - For **Value** type in **%SELECT%HAVING%**.
 
-   > [!NOTE]
-   > In this two-part name, *sqlserver* is the package name and *sql_text* is the field name. The event we chose earlier, *sql_statement_completed*, must be in the same package as the field we choose.
+![image](https://user-images.githubusercontent.com/17832079/172956269-07148cf5-48dd-4c7e-8179-67196e6cec90.png)
+
 
 9. In the upper-left, click the **Data Storage** page.
 
