@@ -493,7 +493,7 @@ SELECT  --C.3
 		     sys.dm_xe_objects  AS o
 		JOIN sys.dm_xe_packages AS p  ON o.package_guid = p.guid
 	WHERE
-		o.object_type IN ('action' , 'target' , 'pred_source')
+		o.object_type IN ('action' , 'target' , 'pred_source' , 'event')
 		AND
 		(
 			(o.capabilities & 1) = 0
